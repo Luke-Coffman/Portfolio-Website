@@ -313,7 +313,7 @@ nav {
   padding: 0 20px;
 }
 
-.projects-section .project2 .sub-images {
+.projects-section .project1 .sub-images {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -336,46 +336,131 @@ nav {
 
 .projects-section .project2 .group{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 60px;
   gap: 50px;
 }
 
-.projects-section .project2 .project-description {
+.projects-section .project2 .group .project-description {
   flex: 1;
   margin-top: 30px;
 }
 
-.projects-section .project2 .project-description p{
+.projects-section .project2 .group .project-description p{
   margin-bottom: 35px;
   margin-top: 10px;
 }
 
 
-.projects-section .project2 .project-images {
+.projects-section .project2 .group .project-images{
   flex: 1;
 }
 
 
-.projects-section .project2 .project-images .main-img img{
-  width: 790px;
+.projects-section .project2 .group .project-images .main-img img{
+  width: 600px;
   height: auto;
   margin-bottom: 20px;
   padding: 0 20px;
 }
 
-.projects-section .project2 .sub-images {
+.projects-section .project2 .group .sub-images{
   display: flex;
   gap: 20px;
   justify-content: center;
 }
 
-.projects-section .project2 .sub-images img{
+.projects-section .project2 .group .sub-images img{
   width: 400px;
   height: 300px;
   margin-bottom: 20px;
 }
+
+/* Section 5: Project: 3 */
+.projects-section .project3 h3{
+  font-size: 24px;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.projects-section .project3 .group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 50px;
+}
+
+.projects-section .project3 .group .project-description {
+  flex: 1;
+  margin-top: 30px;
+}
+
+.projects-section .project3 .group .project-description p{
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+
+
+.projects-section .project3 .group .sub-images{
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.projects-section .project3 .group .sub-images img{
+  width: 400px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+/* Section 5: Project: 3 */
+.projects-section .project4 h3{
+  font-size: 24px;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.projects-section .project4 .group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 50px;
+}
+
+.projects-section .project4 .group .project-description {
+  flex: 1;
+  margin-top: 30px;
+}
+
+.projects-section .project4 .group .project-description p{
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+
+.projects-section .project4 .group .project-images{
+  flex: 1;
+}
+
+
+.projects-section .project4 .group .project-images img{
+  width: 600px;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+
 
 
 
@@ -452,21 +537,25 @@ nav {
 
     .projects-section .project1 .group .project-images .sub-images {
       display: flex;
-      flex-direction: column; /* Stack images vertically */
-      gap: 10px; /* Optional: Adds space between stacked images */
+      flex-direction: column; 
+      gap: 10px; 
   }
 
   .projects-section .project1 .group .project-images .sub-images img {
-      width: 100%; /* Make the images responsive */
+      width: 100%; 
       height: auto;
       text-align: center;
       flex: auto;
   }
 
-
-
-
+  .projects-section .project4 .group .project-images img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 0 20px;
   }
+
+}
 
   @media (max-width: 740px) {
     /*Section 1: Hero*/
