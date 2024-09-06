@@ -75,6 +75,11 @@ nav {
     font-size: 45px;
   }
 
+  .hero-section .text p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
   .hero-section .text .links{
     margin-top: 25px;
   }
@@ -101,8 +106,8 @@ nav {
   }
 
   .hero-section .headshot img{
-    width: 300px;
-    height: 400px;
+    width: 450px;
+    height: auto;
     border-radius: 50%;
   }
 
@@ -191,7 +196,7 @@ nav {
 
   }
 
-  /*Section 3: Education*/
+  /*Section 4: Education*/
 
   .education-section {
     padding: 0 50px;
@@ -255,6 +260,127 @@ nav {
 
   }
 
+  /* Section 5: Projects */
+
+  
+.projects-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.projects-section h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+/* Section 5: Project: 1 */
+
+.projects-section .project1 h3{
+  font-size: 24px;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.projects-section .project1 .group{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 50px;
+}
+
+.projects-section .project1 .project-description {
+  flex: 1;
+  margin-top: 30px;
+}
+
+.projects-section .project1 .project-description p{
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+
+.projects-section .project-images {
+  flex: 1;
+}
+
+
+.projects-section .project1 .project-images .main-img img{
+  width: 790px;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.projects-section .project2 .sub-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.projects-section .project1 .sub-images img{
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+/* Section 5: Project: 2 */
+
+.projects-section .project2 h3{
+  font-size: 24px;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.projects-section .project2 .group{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 50px;
+}
+
+.projects-section .project2 .project-description {
+  flex: 1;
+  margin-top: 30px;
+}
+
+.projects-section .project2 .project-description p{
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+
+.projects-section .project2 .project-images {
+  flex: 1;
+}
+
+
+.projects-section .project2 .project-images .main-img img{
+  width: 790px;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.projects-section .project2 .sub-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.projects-section .project2 .sub-images img{
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
   @media (max-width: 800px) {
     /*Section 1: Hero*/
     .hero-section .text h2{
@@ -293,6 +419,51 @@ nav {
       margin-bottom: 10px;
     }
 
+    /*Section 5: Projects*/
+
+    .projects-section h2{
+      text-align: center;
+    }
+
+    .projects-section h3{
+      text-align: center;
+    }
+
+    .projects-section .project1 .group .project-description{
+      padding: 0 20px;
+      text-align: center;
+      flex-direction: column;
+    }
+    .projects-section .group .project-images{
+      text-align: start;
+      flex-direction: column;
+    }
+
+    .projects-section .project1 .group{
+      flex-direction: column;
+    }
+
+    .projects-section .project1 .group .project-images .main-img img{
+      width: 100%;
+      height: auto;
+      text-align: start;
+      
+    }
+
+    .projects-section .project1 .group .project-images .sub-images {
+      display: flex;
+      flex-direction: column; /* Stack images vertically */
+      gap: 10px; /* Optional: Adds space between stacked images */
+  }
+
+  .projects-section .project1 .group .project-images .sub-images img {
+      width: 100%; /* Make the images responsive */
+      height: auto;
+      text-align: center;
+      flex: auto;
+  }
+
+
 
 
   }
@@ -304,7 +475,7 @@ nav {
     }
 
     .hero-section .headshot img{
-      width: 300px;
+      width: 350px;
       height: 400px;
       aspect-ratio: 1/1;
     }
@@ -354,6 +525,29 @@ nav {
     .experience-section{
       padding: 0 20px;
     }
+
+    .experience-section .group .luke-details img{
+      width: 350px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+  
+    }
+
+    /*Section 4: Education*/
+    .education-section .group .grad-details img{
+      width: 350px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+  
+    }
+
+    
+
+
 
 
   }
